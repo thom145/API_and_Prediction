@@ -1,0 +1,43 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Homepage</title>
+  <meta name="description" content="The landing page">
+  <meta name="author" content="Thom Suijkerbuijk">
+
+
+</head>
+
+<body>
+  <h1>Pages to visit</h1>
+  <ol>
+    <li>Homepage
+      <ul>
+        <li>http://127.0.0.1:5000</li>
+      </ul>
+    </li>
+
+    <li>Show output for AVRO-1 key (only works for this key)
+      <ul>
+        <li>http://127.0.0.1:5000/issue/AVRO-1/resolve-fake</li>
+      </ul>
+    </li>
+
+    <li>Make a prediction when an issue is resolved (issue key: AVRO-1)
+      <ul>
+        <li>http://127.0.0.1:5000/issue/{issue-key}/resolve-prediction</li>
+      </ul>
+    </li>
+
+    <li>Create a planning for a specific day (date format: 2009-12-29)
+      <ul>
+        <li>http://127.0.0.1:5000/release/{date}/resolved-since-now</li>
+      </ul>
+    </li>
+
+  </ol>
+</body>
+</html>
