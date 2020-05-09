@@ -40,7 +40,7 @@ class global_checks:
 
 	global check_date
 	def check_date(date_text):
-		unique_dates = list(df_predicted['created_date_formatted'].unique()) # get all unique keys
+		unique_dates = list(df_predicted['created_date_formated'].unique()) # get all unique keys
 		date_given = datetime.datetime.strptime(date_text, '%Y-%m-%d')
 		# should be dynamic and not static....
 		latest_predicted_date = datetime.datetime.strptime('2018-05-10', '%Y-%m-%d')
@@ -104,8 +104,8 @@ class Planning(Resource):
 		if check_date_format(date):
 			if check_date(date):
 				# filter data
-				df_filterd = df_predicted.loc[df_predicted['created_date_formatted'] <= date]
-				df_filterd = df_filterd.loc[df_filterd['predicted_date_formatted'] > date]
+				df_filterd = df_predicted.loc[df_predicted['created_date_formated'] <= date]
+				df_filterd = df_filterd.loc[df_filterd['predicted_date_formated'] > date]
 
 
 				df_filterd = df_filterd[['key', 'predicted_date']] # select columns

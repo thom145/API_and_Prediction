@@ -1,0 +1,77 @@
+,importance
+comment_count,0.18000133587539022
+createdDayofyear,0.09811091539552552
+summary_length,0.08508853227757229
+description_length,0.07872965739283155
+createdDay,0.07828596927405612
+watch_count,0.0730999176023595
+createdWeek,0.07125538592527186
+createdYear,0.04873898563544713
+createdDayofweek,0.041545413946287406
+createdMonth,0.04005125483736614
+issue_type,0.033904095797692615
+step3,0.01768963405483109
+step2,0.012412471417177707
+number_of_steps,0.01163934262714144
+vote_count,0.011124222706578544
+worker_2,0.009722739294631941
+worker_3,0.008712293939656272
+steps_taken_combined_Non-existent_Open_Resolved,0.008244795950875362
+Patch Available,0.006380651612034246
+steps_taken_combined_Non-existent_Open_Patch Available_Resolved,0.006210245029642668
+createdIs_month_start,0.00600786899782254
+Open_Patch Available.1,0.004830259982039205
+Patch Available_Open.1,0.004118678535447937
+Patch Available_Resolved.2,0.00408715099288897
+In Progress_Resolved.2,0.004081575504322542
+Resolved_Reopened.2,0.0035381742394505603
+In Progress,0.0035222193310097474
+Open_In Progress.2,0.0034939734950433145
+Open_Resolved.1,0.0033423752668604555
+In Progress_Resolved.1,0.003309434534197336
+Open_In Progress.1,0.003003105127377125
+Reopened_Resolved.1,0.0029542402063339494
+Patch Available_Resolved.1,0.0029279676357451957
+step4,0.0025327705447531074
+Patch Available_In Progress.1,0.002269126399423098
+Patch Available_In Progress.2,0.002247858605303288
+Open_Patch Available.2,0.0020057057458271773
+Reopened_Patch Available.1,0.001915735633121616
+Open_Resolved.2,0.0018709848672769868
+Resolved_Reopened.1,0.0018598991946787956
+Reopened_Resolved.2,0.0017496155346292126
+In Progress_Patch Available.1,0.001699653508364299
+priority,0.0016140959329388753
+In Progress_Open.2,0.0015552938744822745
+createdIs_quarter_end,0.0014902674417071311
+In Progress_Patch Available.2,0.0014520360521378284
+Patch Available_Open.2,0.0013546422041322407
+Reopened_Patch Available.2,0.0012306237491767793
+In Progress_Open.1,0.0010940110854004825
+createdIs_quarter_start,0.0008810110667197327
+steps_taken_combined_Non-existent_Open_In Progress_Patch Available_Resolved,0.0007737624159478048
+steps_taken_combined_Non-existent_Open_Resolved_Reopened,0.00018678307917100912
+createdIs_month_end,5.123862389955164e-05
+steps_taken_combined_Non-existent_Open_Patch Available_Resolved_Reopened_Resolved,0.0
+steps_taken_combined_Non-existent_Open_Patch Available_Resolved_Reopened,0.0
+steps_taken_combined_Non-existent_Open_Patch Available_Patch Available_Resolved,0.0
+steps_taken_combined_Non-existent_Open_Patch Available_In Progress_Resolved,0.0
+steps_taken_combined_Non-existent_Open_Resolved_Reopened_Patch Available,0.0
+steps_taken_combined_Non-existent_Open_Patch Available_In Progress_Patch Available_Resolved,0.0
+steps_taken_combined_Non-existent_Open_In Progress_Resolved,0.0
+steps_taken_combined_Non-existent_Open_Resolved_Reopened_Patch Available_Resolved,0.0
+steps_taken_combined_Non-existent_Open_In Progress_Patch Available_Resolved_Reopened_Resolved,0.0
+In Progress_Open,0.0
+projects_in_progress,0.0
+Resolved,0.0
+createdIs_year_end,0.0
+createdIs_year_start,0.0
+worker_1,0.0
+worker_4,0.0
+step1,0.0
+step5,0.0
+step6,0.0
+Non-existent,0.0
+Open,0.0
+Reopened,0.0
+steps_taken_combined_Non-existent_Open_Resolved_Reopened_Resolved,0.0
