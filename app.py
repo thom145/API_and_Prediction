@@ -1,10 +1,8 @@
 from flask import Flask, request, abort, jsonify, render_template
 from flask_restful import Resource, Api
-from sqlalchemy import create_engine
 from json import dumps
 import pandas as pd
 import datetime
-
 
 
 # load the data that will be used
@@ -19,6 +17,7 @@ api = Api(app)
 @app.route("/")
 def home():
 	return render_template("index.html")
+
 
 class global_checks:
 	global check_key
