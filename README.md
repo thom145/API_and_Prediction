@@ -15,16 +15,21 @@ not yet resolved, a prediction has been made on when the issue key will be resol
 * The third page listed (/api/release/{date}/resolved-since-now) will show the issues
 that could be released together.
 
-## Notebooks
+## Important Files
+### Notebooks
 
-* Creating_Dataframe.ipynb: Extracts and creates features from the original datasets (avro_issue, avro_daycount, avro_transactions) that will be used in the exploratory data analysis and prediction. 
+* Creating_Dataframe.ipynb: Extracts and creates features from the original datasets (avro_issue, avro_daycount, avro_transactions) that will be used in the exploratory data analysis and prediction.
 * pipeline.ipynb: Runs the data created in *creating_dataframe* through a pipeline. By doing so the data has been cleaned for the machine learning algorithm
-* MachineLearningTrain.ipynb: Data that has been transformed by *pipeline* will be used to train the machine learning algorithm. Only those issues will be used that have a resolved date. 
+* MachineLearningTrain.ipynb: Data that has been transformed by *pipeline* will be used to train the machine learning algorithm. Only those issues will be used that have a resolved date.
 * MachineLearningPredict.ipynb: The machine learning algorithm that has been created in *MachineLearningTrain* will be used to make a prediciton on all issues. Results will be stored in the data/result folder.
+
+### Python Files
+
+* App.py: Contains the code that runs the web service. Uses the csv file prediction.csv located in the data/result folder
 
 ## Requirements
 
-### Install
+### Install requirements
 ```
 pip install -r requirements.txt
 ```
