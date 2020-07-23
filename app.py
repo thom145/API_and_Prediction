@@ -21,10 +21,10 @@ def home():
 
 class global_checks:
 	global check_key
-	def check_key(avro_key):
+	def check_key(orva_key):
 		unique_keys = list(df_predicted['key'].unique()) # get all unique keys
 		# check if given key exists
-		if avro_key in unique_keys:
+		if orva_key in unique_keys:
 			return True
 		else:
 			return False
@@ -51,28 +51,28 @@ class global_checks:
 
 
 class error_handeling:
-	def bad_request(message, avro_key):
+	def bad_request(message, orva_key):
 	    response = jsonify({'status': 404,
 							'message': message,
-							'help': 'The key: ' + str(avro_key) + ' is not present in the database. Right Format: AVRO-*key_number*'})
+							'help': 'The key: ' + str(orva_key) + ' is not present in the database. Right Format: orva-*key_number*'})
 	    response.status_code = 404
 	    return response
 
 class Fake_Result(Resource):
-	def get(self, avro_key):
+	def get(self, orva_key):
 		"""
-		Will always return the same key, which is AVRO-1
+		Will always return the same key, which is orva-1
 
 		return
-			avro_1_results (dictionary): information (key, resolutiondate) about key AVRO-1
+			orva_1_results (dictionary): information (key, resolutiondate) about key orva-1
 		"""
-		result_avro_1 = df_predicted.loc[df_predicted['key'] == 'AVRO-1']
-		avro_1_values = result_avro_1[['key', 'resolutiondate']]
-		avro_1_results = avro_1_values.to_dict('index')
-		return avro_1_results[2165]
+		result_orva_1 = df_predicted.loc[df_predicted['key'] == 'orva-1']
+		orva_1_values = result_orva_1[['key', 'resolutiondate']]
+		orva_1_results = orva_1_values.to_dict('index')
+		return orva_1_results[2165]
 
 class Prediction_Result(Resource):
-	def get(self, avro_key):
+	def get(self, orva_key):
 		def get_prediction():
 			"""
 			Get the prediction for a specific key if resolutiondate is unknown
@@ -81,9 +81,9 @@ class Prediction_Result(Resource):
 			return
 				value (dictionary): contains the key plus prediction
 			"""
-			new_avro = avro_key.upper()
-			if check_key(new_avro):
-				result = df_predicted.loc[df_predicted['key'] == new_avro]
+			new_orva = orva_key.upper()
+			if check_key(new_orva):
+				result = df_predicted.loc[df_predicted['key'] == new_orva]
 				if result['resolutiondate'].values[0] != '0':
 					result = result[['key', 'resolutiondate']]
 					key = result.index[0]
@@ -93,7 +93,7 @@ class Prediction_Result(Resource):
 				to_dict = result.to_dict('index')
 				return to_dict[key]
 			else:
-				return error_handeling.bad_request("Check for valuable keys", avro_key)
+				return error_handeling.bad_request("Check for valuable keys", orva_key)
 
 		value = get_prediction()
 		return value
@@ -118,8 +118,8 @@ class Planning(Resource):
 
 
 # add api functionalities to API master object
-api.add_resource(Fake_Result, '/issue/<string:avro_key>/resolve-fake')  # bind url identifier to class
-api.add_resource(Prediction_Result, '/issue/<string:avro_key>/resolve-prediction')  # bind url identifier to class
+api.add_resource(Fake_Result, '/issue/<string:orva_key>/resolve-fake')  # bind url identifier to class
+api.add_resource(Prediction_Result, '/issue/<string:orva_key>/resolve-prediction')  # bind url identifier to class
 api.add_resource(Planning, '/release/<string:date>/resolved-since-now')  # whatever the number is, multiply by 2
 
 if __name__ == '__main__':

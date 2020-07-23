@@ -1,5 +1,7 @@
 # REST API
 
+![alt text](https://github.com/thom145/api_assignment/blob/master/image_1.jpg?raw=true)
+
 ## Assignment
 The assignment can be divided in two parts, namely:
 1. Create a (REST-ish) web service
