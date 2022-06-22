@@ -9,7 +9,7 @@ six==1.9.0
 pandas==0.25.3
 pdpipe==0.0.46
 Werkzeug==0.15.3
-numpy==1.16.4
+numpy==1.22.0
 sklearn==0.0
 joblib==0.13.2
 matplotlib==3.1.0
